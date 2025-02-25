@@ -1,0 +1,15 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(31,147,220);
+    margin-top: 10px;
+}
+
+img{
+    height: 70px;
+}
+
+
+
+ 

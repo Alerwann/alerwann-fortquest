@@ -1,0 +1,55 @@
+<div class="contenair-choice">
+  <button mat-button (click)="onLinkClick('all')">Ensemble des quêtes</button>
+
+  <button mat-button (click)="onLinkClick('hebdo')">Quêtes Hebdos</button>
+  <button mat-button (click)="onLinkClick('histoire')">
+    Quêtes d'Histoire
+  </button>
+  <button mat-button (click)="onLinkClick('event')">Quêtes d'Event</button>
+</div>
+<div class="contenair">
+  <div *ngIf="choice === 0 || choice === 1">
+    <table>
+      <thead>
+        <tr>
+          <th class="semaine">Semaines</th>
+          <th class="videos">Vidéos</th>
+          <th class="desc">Descriptions des quêtes</th>
+          <th class="lieux">Lieux Principaux</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr
+          *ngFor="let quetes of filteredQuests; let i = index"
+          [class.paire]="i % 2 === 0"
+        >
+          <td>{{ quetes.date }}</td>
+          <td>
+            <iframe
+              width="500"
+              height="300"
+              [src]="getSafeUrl(quetes.linkytb)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </td>
+          <td>
+            <div *ngFor="let desc of quetes.description">
+              <a class="description-item">{{ desc }}</a>
+            </div>
+          </td>
+          <td>{{ quetes.lieux }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="choice === 2" class="faux">
+    Pas de quêtes pour le moment dans cette catégorie
+    <br />
+    <img src="assets/logo trist.png" alt="logo triste" />
+  </div>
+</div>

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  html, body {
+      height: 100%;
+   
+    }
+  body{
+      font-family: Roboto, "Helvetica Neue", sans-serif;
+      background-color: rgb(182, 238, 231);
+  }
+  
+  app-root{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .contenaire{
+    flex: 1;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-rows: auto 0 1fr auto;
+  }
+  
+  @media screen and  (max-width: 1024px){
+    img{
+      display: none;
+    }
+  
+    }
+    
+    .contenair-choice{
+      display: flex;
+       width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+      
+      }

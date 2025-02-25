@@ -1,0 +1,58 @@
+<div class="contenair-quizz">
+  <h2>Teste tes connaissances</h2>
+
+  <form [formGroup]="quizzform" (ngSubmit)="onSubmit()">
+    <mat-list>
+      <ol>
+        <li *ngFor="let quizz of quizzs; let i = index">
+          <mat-list-item >
+          <h3 [ngClass]="{'correct': responseControls[i].value===true && result!==undefined,
+            'incorrect': responseControls[i].value===false && result!==undefined }"  >
+            {{ quizz.question }} 
+        </h3>
+           
+          </mat-list-item>
+          <mat-radio-group [formControl]="responseControls[i]">
+            <mat-radio-button
+              [disabled]="result !== undefined"
+              *ngFor="let reponse of quizz.reponse"
+              [value]="reponse.valide" 
+                        
+              >
+              <p>{{ reponse.reponse }}</p> </mat-radio-button
+            >
+          </mat-radio-group>
+          <div *ngIf="responseControls[i].value===true && result!==undefined" class="feedback">
+            <p>Bonne réponse !</p>
+            
+          </div>
+          <div *ngIf="responseControls[i].value===false && result!==undefined" class="feedback">
+            <p>Mauvaise réponse.</p>
+            
+          </div>
+        </li>
+      </ol>
+    </mat-list>
+    <div *ngIf="result === undefined" class="bouton-form">
+      <button mat-raised-button type="submit">valide</button>
+      <button mat-raised-button type="reset">Annuler</button>
+    </div>
+  </form>
+
+  <div *ngIf="result !== undefined">
+    <ng-container *ngIf="result === quizzs.length; else otherResults">
+      <img src="assets/logo top.png" alt="Fête réussite" />
+    </ng-container>
+
+    <ng-template #otherResults>
+      <img
+        [src]="result === 0 ? 'assets/logo nul.png' : 'assets/logo moyen.png'"
+        [alt]="result === 0 ? 'Peut mieux faire' : 'Score moyen'"
+      />
+    </ng-template>
+    <h3>Résultat : {{ result }} / {{ quizzs.length }}</h3>
+    <button mat-raised-button (click)="resetQuizz()" type="button" class="reset">reset</button>
+  </div>
+
+ 
+</div>

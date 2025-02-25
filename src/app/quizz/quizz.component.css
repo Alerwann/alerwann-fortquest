@@ -1,0 +1,95 @@
+h2{
+    font-size: 80px;
+    background: linear-gradient(to left, #6e09f3, #ee1be3); /* Dégradé de couleur */
+    -webkit-background-clip: text; /* Applique le dégradé au texte */
+    background-clip: text; /* Standard pour les navigateurs modernes */
+    color: transparent; /* Rend le texte transparent pour voir le dégradé */
+
+    font-weight: bold; /* Gras */
+}
+
+.correct{
+    background: linear-gradient(to left, rgb(7, 231, 231),rgb(60, 238, 25));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding:15px 20px 0;
+}
+
+.incorrect{
+    background: linear-gradient(to left, rgb(255, 0, 0),rgb(240, 83, 83));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding:15px 20px 0;
+}
+
+.correct, .incorrect{
+    border-radius: 20px;
+   
+    
+}
+
+.contenair-quizz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    margin: 20px 0;
+}
+
+mat-radio-group{
+    margin: 0 200px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    
+}
+
+mat-radio-button{
+    font-size: 30px;
+}
+
+form{
+    width: 100%;
+    justify-items: center;
+}
+
+
+
+img{
+    height: 200px;
+}
+
+h3{
+    height: 40px;
+    font-size: 25px;
+  
+     
+}
+p{
+    font-size: 25px;
+}
+
+li{
+    margin-top: 15px;
+}
+ol{
+    margin-bottom: 50px;
+}
+
+.bouton-form{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.feedback{
+    text-align: center ;
+    margin: 20px;
+}
+
+.reset{
+    margin-left: 55px;
+}

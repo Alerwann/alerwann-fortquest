@@ -1,0 +1,61 @@
+table{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  margin: 0 40px;
+  border-collapse: collapse;
+  table-layout: fixed;
+
+}
+
+th{
+  font-size: 40px;
+  padding: 35px 0;
+}
+
+td{
+  padding: 35px 10px;
+  font-size: 20px;
+  /* background-color: yellow; */
+}
+
+.paire{
+  background-color: rgb(145, 188, 245) ;
+}
+
+.lieux{
+  width: 25%;
+  
+}
+
+
+
+.semaine{
+  width: 5%;
+
+}
+
+.desc{
+  width: 25%;
+}
+
+.videos{
+  width: 25%;
+}
+
+
+.contenair-choice{
+display: flex;
+ width: 100%;
+flex-direction: row;
+justify-content: space-around;
+
+}
+
+.faux{
+  font-size: 50px;
+  text-align: center;
+}
+
+img{
+  height: 350px;
+}

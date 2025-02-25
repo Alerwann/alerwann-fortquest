@@ -1,0 +1,24 @@
+.cards{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ row-gap: 100px;
+ justify-items: center;
+ margin-top: 30px;
+}
+
+.card{
+    display: grid;
+    justify-items: center;
+    gap:20px 0;
+}
+
+img{
+    height: 30px;
+}
+
+.entete{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}

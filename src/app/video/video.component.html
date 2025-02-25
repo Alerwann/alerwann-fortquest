@@ -1,0 +1,60 @@
+<div class="contenair-choice">
+  <button mat-button (click)="Onclick('all')">Toutes les vidéos</button>
+  <button mat-button (click)="Onclick('drole')">
+  <img src="assets/lol.png" alt="lol">  Vidéos drôles 
+  </button>
+
+  <button mat-button (click)="Onclick('astuce')">
+    <img src="assets/suspicieux.png" alt="lol">
+    Astuces secrètes</button>
+  <button mat-button (click)="Onclick('edit')">
+    <img src="assets/lol.png" alt="edit">Edits</button>
+</div>
+
+<div class="cards">
+  <div *ngFor="let video of filterdvideo">
+    <div class="card">
+      <div class="entete">
+        <ng-container *ngIf="video.type === 'drole'; else otherResult">
+          <img src="assets/lol.png" alt="lol" />
+        </ng-container>
+        <ng-template #otherResult>
+          <img
+            [src]="
+              video.type === 'edit'
+                ? 'assets/edit.png'
+                : 'assets/suspicieux.png'
+            "
+            [alt]="video.type === 'edit' ? 'logo edit' : 'suspicieux logo'"
+          />
+        </ng-template>
+
+        <h2>{{ video.Titres }}</h2>
+
+        <ng-container *ngIf="video.type === 'drole'; else otherResult">
+          <img src="assets/lol.png" alt="lol" />
+        </ng-container>
+        <ng-template #otherResult>
+          <img
+            [src]="
+              video.type === 'edit'
+                ? 'assets/edit.png'
+                : 'assets/suspicieux.png'
+            "
+            [alt]="video.type === 'edit' ? 'logo edit' : 'suspicieux logo'"
+          />
+        </ng-template>
+      </div>
+
+      <iframe
+        width="315"
+        height="560"
+        [src]="getSafeUrl(video.linkytb)"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</div>

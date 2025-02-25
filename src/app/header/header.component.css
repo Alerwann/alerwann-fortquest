@@ -1,0 +1,51 @@
+
+
+header{
+    display: grid ;
+    grid-template-rows: 1fr auto;
+    justify-items: center;
+    background-color: rgb(31,147,220);
+   
+}
+
+nav{
+    display: inline-flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 10px 0 ;
+}
+
+h1{  
+    font-family: "Jaini Purva", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 100px;
+    margin: 0;
+   
+}
+
+button {  
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 0 15px;
+    color: rgb(105,218,248) !important;
+    font-family: "Jockey One", serif;
+    font-size: 26px;
+   
+}
+
+a{
+background-color: aqua;
+padding:  10px;
+}
+
+a:hover{
+    background-color: white;
+    
+}
+
+
+button:hover{
+    background-color: white !important;
+}
+
