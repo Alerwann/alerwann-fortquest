@@ -22,7 +22,11 @@ export class videoService{
             Titres: 'Mon premier coffre',
             type: 'drole'
         },
-       
+       {
+            linkytb:"https://youtube.com/embed/Np3iIRS1s98?si=5ryl8KMleinCmJCX",
+            Titres:'Le train sans problème et des loots d\'or',
+            type:'astuce'
+       }
     ]
 
      getAllQuest():Video[]{
