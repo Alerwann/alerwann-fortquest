@@ -48,6 +48,15 @@ private quests: Quest[]=[
             'Aller à Outlaw pour braquer 3 téléphone',
             'Braquer avec Valentina le coffre (ça compte pour les deux séries de quêtes d\'histoire '
         ]
+    },
+    {
+        type:'event',
+        date: "Semaine 1",
+        linkytb:"https://www.youtube.com/embed/D9LT4UCmBzs?si=87YjfeIFZ5riMLZg" ,
+        lieux:'Toute la map',
+        description:['Sur les joueur : ', "     - Il faudra les tuer avec un pistolet et une arme de mélée ", "     - Ramasser leur or" ,  "Pour les bots il faudra les tuer avec une PM",
+            "N'oubliez pas de recruter, dépenser votre argent au marché noir et manger de la nourriture (les champignons ne comptent pas)"
+        ]
     }
  
 ]

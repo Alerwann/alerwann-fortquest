@@ -26,7 +26,13 @@ export class videoService{
             linkytb:"https://youtube.com/embed/Np3iIRS1s98?si=5ryl8KMleinCmJCX",
             Titres:'Le train sans problème et des loots d\'or',
             type:'astuce'
+       },
+       {
+        linkytb:"https://www.youtube.com/embed/C54kvywQBVM?si=utVfyBl3C-t1zqXd" ,
+        Titres:"Natmor et Wig font la trend",
+        type:"edit"
        }
+
     ]
 
      getAllQuest():Video[]{
@@ -41,3 +47,5 @@ export class videoService{
 
     }
 }
+
+
