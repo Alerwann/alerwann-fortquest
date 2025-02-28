@@ -1,11 +1,20 @@
 
 
 header{
-    display: grid ;
-    grid-template-rows: 1fr auto;
-    justify-items: center;
-    background-color: rgb(31,147,220);
    
+    width: 100%;
+    background-color: rgb(31,147,220);
+    margin-bottom: 15px;
+   
+   
+}
+
+.pc{
+    display: grid ;
+
+    grid-template-rows: 1fr auto;
+    justify-items: center; 
+    
 }
 
 nav{
@@ -21,6 +30,7 @@ h1{
     font-style: normal;
     font-size: 100px;
     margin: 0;
+    
    
 }
 
@@ -34,27 +44,80 @@ button {
    
 }
 
-a{
-background-color: aqua;
-padding:  10px;
-}
-
-a:hover{
-    background-color: white;
-    
-}
-
 
 button:hover{
-    background-color: white !important;
+    background-color: white ;
 }
 
-@media screen and  (max-width: 1024px){
+.menu-bouton{
+    height: 40px;
+    width: 60px;
+    
+}
+.menu-bouton img{
+   
+    height: 30px;
+    width:30px;
+
+}
+
+.mobile-title{
+    font-size: 60px;
+    font-family: "Jaini Purva", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.mobile{
+ 
+
+    background-color: rgb(31,147,220);
+}
+mat-toolbar {
+    
+    background-color: rgb(31,147,220);
+   
+  }
+  
+  mat-sidenav-container {
+  
+    height: 10px;
+    z-index: 2;
+    background-color: rgb(31,147,220);
+ 
+  }
+  
+  mat-sidenav {
+    width: 300px;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+
+  @media (min-width:769px){
+    .mobile{
+        display: none;
+    }
+  }
+
+@media screen and  (max-width: 768px){
+
+.pc{
+    display: none;
+}
+h1{ 
+    padding: 0;
+    font-size: 4em;
+}
 
 
-
-
-
+header{
+    
+    background-color: rgb(31,147,220); 
+    width: 100%;
+}
 
     
 }
