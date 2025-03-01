@@ -7,7 +7,7 @@
 }
 
 
-h2{
+.titregd{
     font-size: 80px;
     background: linear-gradient(90deg, #6e09f3, #ee1be3); /* Dégradé de couleur */
     background-size: 200% 200%;
@@ -26,7 +26,7 @@ h2{
     width: 80%;
     height: 300px;
     box-shadow: 15px 15px 20px rgb(54, 115, 247); ;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     display: grid;
     grid-template-rows: 1fr 1fr ;
 
@@ -54,13 +54,14 @@ mat-card-header{
     width: 80%;
     align-content: center;
     justify-items: center;
+    margin-bottom: 15px;
     
 }
 
 .questions{
     font-size: 2.5em;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
    
 }
@@ -74,9 +75,6 @@ mat-card-header{
  
   
 }
-
-
-
 .boutonvalid{
     width: 100%;
     display: flex;
@@ -88,12 +86,40 @@ mat-card-header{
 
 img{
     height: 200px;
-}
-.feedback{
-    text-align: center ;
-    margin: 20px;
+    width: 200px;
 }
 
+
+.choisi{
+    background: radial-gradient(ellipse at center, rgb(111, 252, 17) , rgb(12, 206, 240));
+}
+
+.resultat{
+    
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 600px;
+   border-radius: 30px;
+}
+.resulttext {
+    background: linear-gradient(90deg, #6e09f3, #ee1be3); /* Dégradé de couleur */
+    background-size: 200% 200%;
+    -webkit-background-clip: text; /* Applique le dégradé au texte */
+    background-clip: text; /* Standard pour les navigateurs modernes */
+    color: transparent; /* Rend le texte transparent pour voir le dégradé */
+    font-size: 2.5em;
+}
+
+.gdresultat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    background-color: rgb(207, 200, 200);
+ 
+}
 
 @keyframes color-gradient {
   0% { background-position: 0% 50%;}
