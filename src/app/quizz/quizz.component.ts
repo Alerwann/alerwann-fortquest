@@ -2,15 +2,13 @@ import { CommonModule,  } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Quizz } from '../models/quizz';
 import { QuizzService } from '../service/quizz.service';
-import { FormGroup, ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
-import { MatListModule } from '@angular/material/list';
-import {MatRadioModule} from '@angular/material/radio';
-import { FormControl } from '@angular/forms';
-import{ MatButton} from '@angular/material/button';
+import { FormGroup } from '@angular/forms';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-quizz',
-  imports: [CommonModule, ReactiveFormsModule, MatListModule, MatRadioModule, MatButton],
+  imports: [CommonModule, MatCardModule, MatButtonModule],
   templateUrl: './quizz.component.html',
   styleUrl: './quizz.component.css'
 })
@@ -19,46 +17,48 @@ export class QuizzComponent implements OnInit {
 
 
  quizzform !: FormGroup
- result: number |undefined=undefined
- responseControls: FormControl[] =[]
+ result: number |null=null
+ i:number=0
+ reponsesUtilisateur: number[] = []; // Stocke les réponses de l'utilisateur
+selectedIndex: number | null = null; 
+ 
 
- constructor(private quizzService: QuizzService,private FormBuilder : FormBuilder){
-  this.quizzform=this.FormBuilder.group({})
- }
+ constructor(private quizzService: QuizzService){ }
 
  ngOnInit(): void {
    this.quizzs=this.quizzService.getAllQuest()
-   this.initFormControls();
+   
 
  }
 
-
-initFormControls() {
-  this.responseControls = this.quizzs.map(() => new FormControl(null, Validators.required));
+ choisirReponse(indexReponse: number): void {
+  this.selectedIndex =indexReponse
+  this.reponsesUtilisateur[this.i] = indexReponse;
 }
 
-onSubmit(){
-  let score=0;
-  
+previous(){
+if(this.i>0){
+  this.i--
+}
+}
 
-  this.quizzs.forEach((quizz,index)=>{
-    const selectedReponse =this.responseControls[index].value;
-    console.log(selectedReponse)
-    if(selectedReponse===true){
-      score++;
-      
+next(){  this.i++}
+
+calculResultat(){
+  let score=0
+
+  this.reponsesUtilisateur.forEach((responses,index)=>{
+    if(responses!==-1 && this.quizzs[index].choix[0].valide ){
+      score++
     }
-  });
-  
-  this.result=score
-  
-
-
+  })
+this.result=score
 }
 
-resetQuizz(){
-  this.responseControls.forEach(control => control.reset());
-  this.result=undefined
-
+reset(){
+  this.i=0
+  this.selectedIndex=null
+  this.reponsesUtilisateur=[]
+  this.result=null
 }
 }

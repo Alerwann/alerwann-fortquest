@@ -1,4 +1,4 @@
-<div class="contenair-quizz">
+<!-- <div class="contenair-quizz">
   <h2>Teste tes connaissances</h2>
 
   <form [formGroup]="quizzform" (ngSubmit)="onSubmit()">
@@ -55,4 +55,74 @@
   </div>
 
  
+</div> -->
+<div class="contenair-quizz">
+  <h2>Teste tes connaissances</h2>
+  <mat-card class="quizz" *ngIf="result === null">
+    <mat-card-header class="boxtitle">
+      <mat-card-title >
+        <h3 class="title">Question {{ i + 1 }}</h3>
+      </mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content class="question">
+      <h4 class="questions"> {{ quizzs[i].question }}</h4>
+
+      <mat-card-actions class="reponse">
+        <button
+          class="choicebutton"
+          mat-raised-button
+          *ngFor="let resultat of quizzs[i].choix; let j = index"
+          (click)="choisirReponse(j)"
+        >
+          {{ resultat.reponse }}
+        </button>
+      </mat-card-actions>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="boutonssuipre" *ngIf="result === null">
+    <mat-card-actions class="boutonvalid">
+      <button
+        class="validebut"
+        mat-raised-button
+        [disabled]="i < 1"
+        (click)="previous()"
+      >
+        Précédent
+      </button>
+      <button
+        class="validebut"
+        mat-raised-button
+        [disabled]="
+          i === quizzs.length - 1 || reponsesUtilisateur.length < i + 1
+        "
+        (click)="next()"
+      >
+        Suivant
+      </button>
+    </mat-card-actions>
+
+
+  </mat-card>
+  
+  <mat-card-actions class="result">
+    <button
+      class="validebut"
+      mat-raised-button
+      *ngIf="i === quizzs.length - 1 && this.reponsesUtilisateur.length !== i"
+      (click)="calculResultat()"
+    >
+      donne ton resultat
+    </button>
+  </mat-card-actions>
+
+  <mat-card *ngIf="result !== null" class="resultat">
+    <mat-card-content>
+      <h2>Le résultat est {{ result }}/{{ quizzs.length }}</h2>
+      <button mat-raised-button type="button" (click)="reset()">
+        Tu veux essayer de nouveaux?
+      </button>
+    </mat-card-content>
+  </mat-card>
 </div>

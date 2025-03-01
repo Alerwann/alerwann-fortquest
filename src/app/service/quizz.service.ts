@@ -11,7 +11,7 @@ import { Injectable } from "@angular/core";
 export class QuizzService{
     private quizzs: Quizz[]=[
         {   question : 'Quel héro doit aller chercher Jade dans un portail?',
-            reponse: [
+            choix: [
                 {reponse:'Kendo',
                 valide:false
                 },
@@ -24,7 +24,7 @@ export class QuizzService{
             ]
         },
         {   question : 'Quel est le dernier chapitre pendant lequel on pouvait avoir des armes exotiques en battle royal?',
-            reponse: [
+            choix: [
                 {reponse:'2',
                 valide:false
                 },
@@ -37,7 +37,7 @@ export class QuizzService{
             ]
         },
         {   question : 'Combien de type de skin banane existe?',
-            reponse: [
+            choix: [
                 {reponse:'5',
                 valide:false
                 },
@@ -50,7 +50,7 @@ export class QuizzService{
             ]
         },   
         {   question : 'Combien de passe de combat sont compris dans l\'abonnement Frotnite Crew',
-            reponse: [
+            choix: [
                 {reponse:'Tous',
                 valide:true
                 },
@@ -63,7 +63,7 @@ export class QuizzService{
             ]
         },
         {   question : 'Au début de Fortnite, quel était l\' unique mode de jeu?',
-            reponse: [
+            choix: [
                 {reponse:'Battle Royal',
                 valide:false
                 },

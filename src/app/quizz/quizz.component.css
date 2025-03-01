@@ -1,95 +1,104 @@
-h2{
-    font-size: 80px;
-    background: linear-gradient(to left, #6e09f3, #ee1be3); /* Dégradé de couleur */
-    -webkit-background-clip: text; /* Applique le dégradé au texte */
-    background-clip: text; /* Standard pour les navigateurs modernes */
-    color: transparent; /* Rend le texte transparent pour voir le dégradé */
-
-    font-weight: bold; /* Gras */
-}
-
-.correct{
-    background: linear-gradient(to left, rgb(7, 231, 231),rgb(60, 238, 25));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    padding:15px 20px 0;
-}
-
-.incorrect{
-    background: linear-gradient(to left, rgb(255, 0, 0),rgb(240, 83, 83));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    padding:15px 20px 0;
-}
-
-.correct, .incorrect{
-    border-radius: 20px;
-   
-    
-}
 
 .contenair-quizz{
     display: flex;
     flex-direction: column;
     align-items: center;
-  
-    margin: 20px 0;
-}
-
-mat-radio-group{
-    margin: 0 200px;
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
     
 }
 
-mat-radio-button{
-    font-size: 30px;
+
+h2{
+    font-size: 80px;
+    background: linear-gradient(90deg, #6e09f3, #ee1be3); /* Dégradé de couleur */
+    background-size: 200% 200%;
+    -webkit-background-clip: text; /* Applique le dégradé au texte */
+    background-clip: text; /* Standard pour les navigateurs modernes */
+    color: transparent; /* Rend le texte transparent pour voir le dégradé */
+    text-align: center;
+    margin-bottom: 20px;
+    animation: color-gradient 3s infinite;
 }
 
-form{
-    width: 100%;
+.quizz{
+    background:linear-gradient(to left, rgb(104, 124, 240), rgb(28, 238, 238));
+    align-content: center;
     justify-items: center;
+    width: 80%;
+    height: 300px;
+    box-shadow: 15px 15px 20px rgb(54, 115, 247); ;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+
+}
+mat-card-header{
+    align-items: center;
+}
+
+.title{
+    font-size: 2.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px 0;
+    background: radial-gradient(circle at center, #c0f309, #1beee3); /* Dégradé de couleur */
+    -webkit-background-clip: text; /* Applique le dégradé au texte */
+    background-clip: text; /* Standard pour les navigateurs modernes */
+    color: transparent; /* Rend le texte transparent pour voir le dégradé */
+    -webkit-text-stroke: 2px rgb(20, 20, 20);
+   
+   
+   
+}
+
+.question{
+    display: grid;
+    width: 80%;
+    align-content: center;
+    justify-items: center;
+    
+}
+
+.questions{
+    font-size: 2.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    text-align: center;
+   
+}
+
+.reponse{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    align-content: center;
+    width: 80%;
+ 
+  
 }
 
 
+
+.boutonvalid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   gap: 20px;
+   justify-content: center;
+   padding: 15px;
+  }
 
 img{
     height: 200px;
 }
-
-h3{
-    height: 40px;
-    font-size: 25px;
-  
-     
-}
-p{
-    font-size: 25px;
-}
-
-li{
-    margin-top: 15px;
-}
-ol{
-    margin-bottom: 50px;
-}
-
-.bouton-form{
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80%;
-}
-
 .feedback{
     text-align: center ;
     margin: 20px;
 }
 
-.reset{
-    margin-left: 55px;
+
+@keyframes color-gradient {
+  0% { background-position: 0% 50%;}
+  50% { background-position:100% 100%;}
+  100% { background-position: 50% 0%; }
 }
+
+
