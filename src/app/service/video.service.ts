@@ -34,7 +34,7 @@ export class videoService{
        },
        {
         linkytb:"https://www.youtube.com/embed/lCpFf9hhFkE" ,
-        Titres:"Mauvaise fois nocturne",
+        Titres:"Mauvaise fois nocturnee",
         type:"edit"
        },
 
