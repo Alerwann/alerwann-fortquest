@@ -67,7 +67,19 @@ private quests: Quest[]=[
             "Tuer 3 personnes avec le fusil", "Détruire une pierre avec des nervures d'or avec le laser plasma", "Retourner à Mosses pour tester la pierre sur l'établi"
         ]
     },
+    {
+        type:'hebdo',
+        date: "Semaine 2",
+        linkytb:"https://www.youtube.com/embed/H25nilufDXY" ,
+        lieux:'Toute la map ',
+        description:['Il faudra voler dans les air et un vitcoin',
+            'Tuer soit en glissant soit en nageant',
+            'faire 2 top 25',
+            'Perdre de la vie pour pouvoir en récupérer'
+        ]
+    },
   
+    
 ]
 
 getAllQuest():Quest[]{
