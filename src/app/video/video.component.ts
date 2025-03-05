@@ -18,7 +18,7 @@ export class VideoComponent implements OnInit {
   constructor(private videoservice: videoService, private sanitizer : DomSanitizer){}
 
  ngOnInit(): void {
-   this.filterdvideo=this.videoservice.getAllQuest()
+   this.filterdvideo=this.videoservice.getAllQuest().reverse()
  }
  getSafeUrl(url: string): SafeResourceUrl {
      return this.sanitizer.bypassSecurityTrustResourceUrl(url);
