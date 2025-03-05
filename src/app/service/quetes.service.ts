@@ -57,8 +57,17 @@ private quests: Quest[]=[
         description:['Sur les joueur : ', "     - Il faudra les tuer avec un pistolet et une arme de mélée ", "     - Ramasser leur or" ,  "Pour les bots il faudra les tuer avec une PM",
             "N'oubliez pas de recruter, dépenser votre argent au marché noir et manger de la nourriture (les champignons ne comptent pas)"
         ]
-    }
- 
+    },
+    {
+        type:'histoire',
+        date: "Semaine 2",
+        linkytb:"https://www.youtube.com/embed/jqR87FGXBeI" ,
+        lieux:'Crime city et Magic Mosses ',
+        description:['Tuer à crime city', "Aller parler à Joss à Mosses et acheter un laser plasma ", " Faire la fête de vito" ,  "Aller au marché noir au nord de crime city, acheter un fusil à dégâts collatéraux",
+            "Tuer 3 personnes avec le fusil", "Détruire une pierre avec des nervures d'or avec le laser plasma", "Retourner à Mosses pour tester la pierre sur l'établi"
+        ]
+    },
+  
 ]
 
 getAllQuest():Quest[]{

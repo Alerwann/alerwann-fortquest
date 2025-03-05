@@ -31,7 +31,12 @@ export class videoService{
         linkytb:"https://www.youtube.com/embed/C54kvywQBVM?si=utVfyBl3C-t1zqXd" ,
         Titres:"Natmor et Wig font la trend",
         type:"edit"
-       }
+       },
+       {
+        linkytb:"https://www.youtube.com/embed/lCpFf9hhFkE" ,
+        Titres:"Mauvaise fois nocturne",
+        type:"edit"
+       },
 
     ]
 
