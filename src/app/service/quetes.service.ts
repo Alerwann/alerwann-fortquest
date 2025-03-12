@@ -78,6 +78,31 @@ private quests: Quest[]=[
             'Perdre de la vie pour pouvoir en récupérer'
         ]
     },
+    {
+        type:'hebdo',
+        date: "Semaine 3",
+        linkytb:"https://www.youtube.com/embed/DY_9MndiIpU" ,
+        lieux:'Privélégier l\'arrivée à Shiny',
+        description:['Miner des mines d\'or',
+            'Tué sou l\'effet de la ruée',
+            'Galère à trouver des lamas dorés',
+            'Chevauche une forreuse'
+        ]
+    },
+    {
+        type:'event',
+        date: "Semaine 3",
+        linkytb:"https://www.youtube.com/embed/Qf7jY-NQ3CQ" ,
+        lieux:'Le coffre où Fletcher apparait',
+        description:['Tue des bots que ce soit aux coffres ou à la météo',
+            'Plus de 100 de dégat en 1 coup avec le pompe',
+            'Gagne la de la tune ou dépense beaucoup dans la partie',
+            'Glisse sur les rails de shiny',
+            'Récupère les médaillons sur Fletcher et sur l\'île ainsi que des bénédictions',
+            'Joue pendant 20 phases de la tempête'
+        ]
+    },
+    
   
     
 ]
