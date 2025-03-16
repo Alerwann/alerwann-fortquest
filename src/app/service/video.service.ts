@@ -37,6 +37,11 @@ export class videoService{
         Titres:"Mauvaise fois nocturne",
         type:"edit"
        },
+       {
+        linkytb:"https://www.youtube.com/embed/Dr1IqQZvakI" ,
+        Titres:"Le Bitcoin de Fortnite le plus facile à avoir",
+        type:"astuce"
+       },
 
     ]
 

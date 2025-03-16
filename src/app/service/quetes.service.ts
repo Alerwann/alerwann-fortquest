@@ -102,6 +102,20 @@ private quests: Quest[]=[
             'Joue pendant 20 phases de la tempête'
         ]
     },
+    {
+        type:'histoire',
+        date: "Semaine 3",
+        linkytb:"https://www.youtube.com/embed/JRVCISIXtgI" ,
+        lieux:'Les marché noirs, La montagne en forme de loup et Masked',
+        description:['Accomplir un mandat de l\'ombre',
+            'Dépenser son argent dans un marché noir',
+            'Ouvrir un coffre spécial dans la chambre secrète des marchés noir',
+            'Au pied de la grande roche en forme de loup répurérer le sac à dos',
+            'Analyser les 3 sources d\'énergie',
+            'Prendre le fragment 0 dans les sous sol de Masked',
+            'retourner voir Midas'
+        ]
+    },
     
   
     
