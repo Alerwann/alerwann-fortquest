@@ -116,6 +116,18 @@ private quests: Quest[]=[
             'retourner voir Midas'
         ]
     },
+    {
+        type:'event',
+        date: "Semaine 3",
+        linkytb:"https://www.youtube.com/embed/JkqNRzi2Udg" ,
+        lieux:'Les villes avec coffre fort, les trains et les fourgons',
+        description:['Pour la quête du médaillon : une fois que tu as un médaillons jète le et reprends le jusqu\'à finir les 5 étapes',
+            'Dépenser son argent partout où tu peux',
+            'Fais le max de coffre, train et fourgons par partie',
+            'Tous les bots de la carte fonctionne pour la quête des Bots SAUF ceux de la tour météo',
+     
+        ]
+    },
     
   
     
