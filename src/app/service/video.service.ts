@@ -42,6 +42,11 @@ export class videoService{
         Titres:"Le Bitcoin de Fortnite le plus facile à avoir",
         type:"astuce"
        },
+       {
+           linkytb: "https://youtube.com/embed//JBVOy1-V-fs",
+           Titres: 'Le bug des fourgons',
+           type: 'drole'
+       },
 
     ]
 

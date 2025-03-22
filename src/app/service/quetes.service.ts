@@ -128,6 +128,30 @@ private quests: Quest[]=[
      
         ]
     },
+    {
+        type:'hebdo',
+        date: "Semaine 4",
+        linkytb:"https://www.youtube.com/embed/nuKQq92VzIs" ,
+        lieux:'Partout avec une préférence pour les montagnes pour glisser 50m',
+        description:['Survie 3fois jusqu\'au top 17',
+            'Tire à plus de 50m',
+            'Lance des objets (les bandages c\'est pratique et efficace',
+            'Prends une brise rotule et amuse toi ',
+            'Glisse sur 50m'
+        ]
+    },
+    {
+        type:'event',
+        date: "Semaine 4",
+        linkytb:"https://www.youtube.com/embed/-0vRoObr_Eo" ,
+        lieux:'shogun\'s Solitude pour recruter le bot sinon toute la map',
+        description:['S\'enduire d\'or et courrir',
+            'Envoyer en l\'air ces adversaires grâce à la batte ou aux grenades (les grenades semblent plus efficaces)',
+            'Utiliser une arme exotique et soit le mini-gun soit le pistolet de midas (le mieux c\'est d\'avoir le niveau or dans les cartes)',
+            'Tirer à 40 m (facile avec le pistolet de Midas)',
+            'Obtenir des disctinctions '
+        ]
+    },
     
   
     
