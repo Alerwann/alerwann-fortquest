@@ -153,6 +153,15 @@ private quests: Quest[]=[
         ]
     },
     
+    {
+        type:'event',
+        date: "Semaine 5",
+        linkytb:"https://www.youtube.com/embed/Smn11Al5WYs" ,
+        lieux:'Crime city, shinny, Outlaw, Masked, wolfair',
+        description:['Ecouter les enregistrement des 7 talki-walkie (j\'ai fait la vidéo avant la maj des nouveaux emplacements)'
+        ]
+    },
+    
   
     
 ]
