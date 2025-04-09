@@ -179,7 +179,7 @@ private quests: Quest[]=[
     },
     {
         type:'histoire',
-        date: "Semaine ",
+        date: "Semaine 6 ",
         linkytb:"https://www.youtube.com/embed/PZsI_DXivv4" ,
         lieux:'Lonewolf et la marché noir vers le champs multicolore, Masked',
         description:['Trouver 3 indices à Lonewolf : Bureau du premier étage, devant le coffre et dans le coffre',
@@ -189,6 +189,26 @@ private quests: Quest[]=[
             'Trouver 3 indices à masked, 1 dans la maison principale, 2 dans le sous-sol habituel',
             'Parler à Midas',
            
+        ]
+    },
+    {
+        type:'event',
+        date: "Semaine 6",
+        linkytb:"https://www.youtube.com/embed/iNsEADzo0xo" ,
+        lieux:'L\'ile de Shogun, Forêt vivante',
+        description:['Atterie à la forêt vivante', 'prends les gants(les types en même teemps), fait des ataques avec (le combo total et tape avec avant de faire l\'attaque spéciale','fait le boss de l\'ile et tue quelqu\'un après'
+        ]
+    },
+    {
+        type:'hebdo',
+        date: "Semaine 6",
+        linkytb:"https://www.youtube.com/embed/ztmuRwvjWOg" ,
+        lieux:'Les lieux avec un diamant sur la carte, Demon ou le champs multicolore',
+        description:['Faire une chute sans dégats (utiliser les gants de glace, la batte ou ayez de la chance comme moi',
+            'Fouillez une boite à bijoux',
+            'Recruter à Demon ou au champs multicolore ',
+            'Tirer dans la tête ',
+            'Faire des dégâts au pompe (sur joueur ou bot)'
         ]
     },
     
