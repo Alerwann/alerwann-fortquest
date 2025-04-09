@@ -163,6 +163,34 @@ private quests: Quest[]=[
     },
     
   
+    {
+        type:'histoire',
+        date: "Semaine 5",
+        linkytb:"https://www.youtube.com/embed/93EbhGQyJLU" ,
+        lieux:'Important d\'être en moto, lonely et le marché noir vers le champs 4 couleurs',
+        description:['Faire des figures en moto (les espris du vents sont idéals pour ça)',
+            'Parler à Keysha',
+            'Accélérer sur la route',
+            'Faire des dégâts en moto : soit en renversant soit en tirant depuis la moto',
+            'Acheter des objets à Cassinidy ',
+            'Acheter une arme exotique et tuer avec',
+            'Quêtes bonus : voler la voiture avec Cassidy puis réaliser le parcours'
+        ]
+    },
+    {
+        type:'histoire',
+        date: "Semaine ",
+        linkytb:"https://www.youtube.com/embed/PZsI_DXivv4" ,
+        lieux:'Lonewolf et la marché noir vers le champs multicolore, Masked',
+        description:['Trouver 3 indices à Lonewolf : Bureau du premier étage, devant le coffre et dans le coffre',
+            'Acheter une arme légendaire ou supérieur au marché noir ',
+            'Éliminer les gardes lourds alpha du Baron (Tour météo ou Coffre fort)',
+            'Braquer un train ou un convoi blindé (pour le train ne nécessite pas de tuer les gardes)',
+            'Trouver 3 indices à masked, 1 dans la maison principale, 2 dans le sous-sol habituel',
+            'Parler à Midas',
+           
+        ]
+    },
     
 ]
 
