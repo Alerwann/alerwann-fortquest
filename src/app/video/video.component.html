@@ -11,6 +11,11 @@
     <img src="assets/lol.png" alt="edit">Edits</button>
 </div>
 
+<div *ngIf="videos.length===0" class="faux">
+  Pas de vidéos pour le moment
+  <br />
+  <img class="grosseim" src="assets/logo trist.png" alt="logo triste" />
+</div>
 <div class="cards">
   <div *ngFor="let video of filterdvideo">
     <div class="card">
