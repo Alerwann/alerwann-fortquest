@@ -24,6 +24,9 @@ export class QuestListComponent {
 
   ngOnInit(): void {
       if(this.choice===0){
+        if(this.quetes.length===0){
+          this.choice=2
+        }
         this.filteredQuests=this.queteService.getAllQuest().reverse()
       }
 
@@ -34,7 +37,8 @@ export class QuestListComponent {
       this.choice=1
       this.type=type
       this.filteredQuests = this.queteService.getQuestByType(this.type)
-      if(this.filteredQuests.length===0){
+      if(this.filteredQuests.length===0 || this.quetes.length===0){
+       
         this.choice=2
       }
 

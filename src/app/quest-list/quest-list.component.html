@@ -8,7 +8,11 @@
   <button mat-button (click)="onLinkClick('event')">Quêtes d'Event</button>
 </div>
 <div class="contenair">
-  <div *ngIf="choice === 0 || choice === 1">
+
+
+
+
+  <div *ngIf="choice===0 || choice===1">
     <table>
       <thead>
         <tr>
@@ -20,6 +24,7 @@
       </thead>
 
       <tbody>
+     
         <tr
           *ngFor="let quetes of filteredQuests; let i = index"
           [class.paire]="i % 2 === 0"
