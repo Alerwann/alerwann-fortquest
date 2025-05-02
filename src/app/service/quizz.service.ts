@@ -10,67 +10,67 @@ import { Injectable } from "@angular/core";
 
 export class QuizzService{
     private quizzs: Quizz[]=[
-        {   question : 'Quel héro doit aller chercher Jade dans un portail?',
+        {   question : 'Combien de collab Fortnite a eu avec Star Wars?',
             choix: [
-                {reponse:'Kendo',
+                {reponse:'1',
                 valide:false
                 },
-                {reponse:'Daigo',
+                {reponse:'On ne compte plus',
                 valide:true
                 },
-                {reponse:'Hope',
+                {reponse:'0',
                 valide:false
                 },
             ]
         },
-        {   question : 'Quel est le dernier chapitre pendant lequel on pouvait avoir des armes exotiques en battle royal?',
+        {   question : 'Quels jours est celui de remise à 0 des quêtes ',
             choix: [
-                {reponse:'2',
-                valide:false
+                {reponse:'mardi',
+                valide:true
                 },
-                {reponse:'3',
-                valide:false
+                {reponse:'J\'en sais rien, je m\'en fou de quête',
+                valide:true
                 },
-                {reponse:'4',
+                {reponse:'dimanche',
                 valide:true
                 },
             ]
         },
-        {   question : 'Combien de type de skin banane existe?',
+        {   question : 'Est ce que tu es allé sur mes réseaux?',
             choix: [
-                {reponse:'5',
+                {reponse:'non',
                 valide:false
                 },
-                {reponse:'10',
-                valide:false
+                {reponse:'je viens de là, la preuve je t\'envoi un DM twitter si j\'ai 5 sur 5',
+                valide:true
                 },
-                {reponse:'15',
+                {reponse:'Quoi tu as des réseaux?',
                 valide:true
                 },
             ]
         },   
-        {   question : 'Combien de passe de combat sont compris dans l\'abonnement Frotnite Crew',
+        {   question : 'Quel Team viens d\'être sacré championne d\'Europe de Fortnite',
             choix: [
-                {reponse:'Tous',
+                {reponse:'M8',
                 valide:true
                 },
-                {reponse:'1',
-                valide:false
+                {reponse:'HavoK',
+                valide:true
                 },
-                {reponse:'2',
+                {reponse:'Vitality',
                 valide:false
                 },
             ]
         },
-        {   question : 'Au début de Fortnite, quel était l\' unique mode de jeu?',
+        {   question : 'Epic adore t-il Dinsey?',
             choix: [
-                {reponse:'Battle Royal',
-                valide:false
-                },
-                {reponse:'Sauver le monde',
+                {reponse:'Sérieux c\'est quoi cette question?',
                 valide:true
                 },
-                {reponse:'0 build',
+                {reponse:'Star wars revient encore et toujours et on peut lier notre compte',
+                valide:true
+                },
+                {reponse:'Non c\'est trop violent pour que Disney',
                 valide:false
                 },
             ]
