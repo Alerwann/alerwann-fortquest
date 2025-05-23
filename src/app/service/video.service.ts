@@ -7,8 +7,25 @@ import { Injectable } from "@angular/core";
 })
 
 export class videoService{
-    private videos : Video[]=[                               
+    private videos : Video[]=[        
         
+        {
+            linkytb: 'https://youtu.be/F0Z88BGepo0?si=0I1IlkD5jpqeeiDd',
+            Titres: 'je suis pire que les bots',
+            type: 'drole'
+        },
+
+        {
+           linkytb: 'https://youtu.be/HMMjx7Cxbew?si=cRo1853YKs330B9I',
+           Titres: 'Ce cacher de dark Vador',
+           type:'astuce'
+        },
+
+        {
+           linkytb: 'https://youtu.be/notascu0Msc?si=3AA-4eCdDgTNy7d2',
+           Titres: 'Toutes les cabines',
+           type:'astuce'
+        }
 
     ]
 
