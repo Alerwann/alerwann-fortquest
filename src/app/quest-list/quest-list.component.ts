@@ -24,11 +24,10 @@ export class QuestListComponent {
 
   ngOnInit(): void {
       if(this.choice===0){
-        if(this.quetes.length===0){
-          this.choice=2
-        }
+      
         this.filteredQuests=this.queteService.getAllQuest().reverse()
       }
+
 
     }
   

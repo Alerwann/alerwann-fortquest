@@ -10,19 +10,19 @@ export class videoService{
     private videos : Video[]=[        
         
         {
-            linkytb: 'https://youtu.be/F0Z88BGepo0?si=0I1IlkD5jpqeeiDd',
+            linkytb: 'https://www.youtube.com/embed/F0Z88BGepo0',
             Titres: 'je suis pire que les bots',
             type: 'drole'
         },
 
         {
-           linkytb: 'https://youtu.be/HMMjx7Cxbew?si=cRo1853YKs330B9I',
+           linkytb: 'https://www.youtube.com/embed/HMMjx7Cxbew',
            Titres: 'Ce cacher de dark Vador',
            type:'astuce'
         },
 
         {
-           linkytb: 'https://youtu.be/notascu0Msc?si=3AA-4eCdDgTNy7d2',
+           linkytb: 'https://www.youtube.com/embed/notascu0Msc',
            Titres: 'Toutes les cabines',
            type:'astuce'
         }
